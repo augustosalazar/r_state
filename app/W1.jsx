@@ -1,12 +1,16 @@
 import React from 'react';
 import { View } from 'react-native';
-//rsf
-function W1(props) {
+import { Button } from 'react-native-paper';
+
+export function W1(props) {
     return (
-        <div>
-            
-        </div>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' , backgroundColor: 'lightblue'}}>
+            <View style={{ flex: 1 }}>
+                <Button
+                    title="Increment"
+                    onPress={() => console.log('Button pressed')}
+                />
+            </View>
+        </View>
     );
 }
-
-export default W1;

@@ -1,12 +1,10 @@
-
 import React from 'react';
+import { View } from 'react-native';
 
-function W3(props) {
+export function W3(props) {
     return (
-        <div>
-            
-        </div>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' , backgroundColor: 'lightyellow'}}>
+            {/* Add content here if needed */}
+        </View>
     );
 }
-
-export default W3;

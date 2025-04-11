@@ -1,11 +1,14 @@
 import React from 'react';
+import { View } from 'react-native';
+import { Button } from 'react-native-paper';
 
-function W2(props) {
+export function W2(props) {
     return (
-        <div>
-            
-        </div>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' , backgroundColor: 'lightgreen'}}>
+            <Button
+                title="Reset"
+                onPress={() => console.log('Button pressed')}
+            />
+        </View>
     );
 }
-
-export default W2;

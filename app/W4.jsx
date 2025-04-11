@@ -1,12 +1,13 @@
+import { View } from 'react-native';
+import { Button } from 'react-native-paper';
 
-import React from 'react';
-
-function W4(props) {
+export function W4(props) {
     return (
-        <div>
-            
-        </div>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' , backgroundColor: 'lightcoral'}}>
+            <Button
+                title="Decrease"
+                onPress={() => console.log('Button pressed')}
+            />
+        </View>
     );
 }
-
-export default W4;

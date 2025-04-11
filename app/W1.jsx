@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text } from "react-native";
 import { Button } from "react-native-paper";
+import { AppContext } from "../AppProvider";
 
 export function W1(props) {
+  const { Value, increment } = useContext(AppContext); // Use AppContext here
   return (
     <View
       style={{
@@ -12,10 +14,10 @@ export function W1(props) {
         backgroundColor: "lightblue",
       }}
     >
-        <Text>Value</Text>
-      <Button 
-      mode="contained"
-      onPress={() => console.log("Button pressed")}>Increment</Button>
+      <Text>{Value}</Text>
+      <Button mode="contained" onPress={() => increment()}>
+        Increment
+      </Button>
     </View>
   );
 }

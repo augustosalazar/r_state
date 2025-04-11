@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text } from "react-native";
+import { AppContext } from "../AppProvider";
 
 export function W3(props) {
+  const { Value, increment } = useContext(AppContext);
   return (
     <View
       style={{
@@ -11,7 +13,7 @@ export function W3(props) {
         backgroundColor: "lightyellow",
       }}
     >
-      <Text>W3</Text>
+      <Text>{Value}</Text>
     </View>
   );
 }

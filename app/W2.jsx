@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text } from "react-native";
 import { Button } from "react-native-paper";
+import { AppContext } from "../AppProvider";
 
 export function W2(props) {
+  const { Value, reset } = useContext(AppContext); // Use AppContext here
   return (
     <View
       style={{
@@ -12,10 +14,10 @@ export function W2(props) {
         backgroundColor: "lightgreen",
       }}
     >
-        <Text>Value</Text>
-      <Button 
-      mode="contained"
-      onPress={() => console.log("Button pressed")}>Reset</Button>
+      <Text>{Value}</Text> 
+      <Button mode="contained" onPress={() => reset()}>
+        Reset
+      </Button>
     </View>
   );
 }

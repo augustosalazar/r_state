@@ -4,7 +4,7 @@ import { AppContext } from "../AppProvider";
 import React, { useContext } from "react";
 
 export function Page2(props) {
-    const { Value, increment } = useContext(AppContext);
+  const { Value, increment } = useContext(AppContext);
   return (
     <View
       style={{

@@ -4,7 +4,7 @@ import { Button } from "react-native-paper";
 import { AppContext } from "../AppProvider";
 
 export function W1(props) {
-  const { Value, increment } = useContext(AppContext); // Use AppContext here
+  const { Value, increment } = useContext(AppContext); 
   return (
     <View
       style={{

@@ -4,7 +4,7 @@ import { Button } from "react-native-paper";
 import { AppContext } from "../AppProvider";
 
 export function W2(props) {
-  const { Value, reset } = useContext(AppContext); // Use AppContext here
+  const { Value, reset } = useContext(AppContext); 
   return (
     <View
       style={{
